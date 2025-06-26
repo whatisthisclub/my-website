@@ -1,0 +1,33 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --green: #2fe06e;
+  --white: #ffffff;
+  --grey1: #e3e3e3;
+  --grey2: #b9b9b9;
+  --grey3: #666666;
+  --black: #000000;
+  --gradation: linear-gradient(
+    180deg,
+    rgba(47, 224, 110, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* Fonts */
+  --head-font-family: Suit-Bold, sans-serif;
+  --head-font-size: 60px;
+  --head-line-height: 140%;
+  --head-font-weight: 700;
+  --head-font-style: normal;
+
+  /* Effects */
+}
+/* Figma Color Variables of your File */
+:root,
+[data--mode="mode-1"] {
+  /* mode-1 */
+  --grey1: #e3e3e3;
+  --green: #2fe06e;
+  --grey2: #b9b9b9;
+  --grey3: #666666;
+}
