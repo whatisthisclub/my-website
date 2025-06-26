@@ -22,6 +22,8 @@
       position: absolute;
       left: 180px;
       top: 150px;
+      z-index: 10;
+      white-space: nowrap;
     }
     .div2 {
       font-size: 16pt;
@@ -32,6 +34,170 @@
       height: 24px;
       position: relative;
       overflow: visible;
+    }
+    .shop-main-image {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%) scale(0.5);
+      max-width: 80%;
+      height: auto;
+      z-index: 1;
+    }
+    .shop-menu,
+    .shop-menu * {
+      box-sizing: border-box;
+    }
+    .shop-menu {
+      color: var(--white, #ffffff);
+      text-align: center;
+      font-family: "Suit-Bold", sans-serif;
+      font-size: 24pt;
+      font-weight: 700;
+      position: absolute;
+      top: 880px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .shop-price,
+    .shop-price * {
+      box-sizing: border-box;
+    }
+    .shop-price {
+      color: var(--grey2, #b9b9b9);
+      text-align: center;
+      font-family: "SuitVariable-SemiBold", sans-serif;
+      font-size: 20pt;
+      font-weight: 600;
+      position: absolute;
+      top: 930px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .shop-text,
+    .shop-text * {
+      box-sizing: border-box;
+    }
+    .shop-text {
+      color: var(--grey1, #e3e3e3);
+      text-align: center;
+      font-family: "SuitVariable-SemiBold", sans-serif;
+      font-size: 22px;
+      line-height: 140%;
+      font-weight: 600;
+      position: absolute;
+      top: 1100px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      max-width: 600px;
+    }
+    .shop-saju,
+    .shop-saju * {
+      box-sizing: border-box;
+    }
+    .shop-saju {
+      color: var(--grey1, #e3e3e3);
+      text-align: center;
+      font-family: "SuitVariable-SemiBold", sans-serif;
+      font-size: 22px;
+      line-height: 140%;
+      font-weight: 600;
+      position: absolute;
+      top: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .saju-link,
+    .saju-link * {
+      box-sizing: border-box;
+    }
+    .saju-link {
+      color: var(--green, #2fe06e);
+      text-align: center;
+      font-family: "SuitVariable-Bold", sans-serif;
+      font-size: 24px;
+      line-height: 140%;
+      font-weight: 700;
+      position: absolute;
+      top: 1350px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .details,
+    .details * {
+      box-sizing: border-box;
+    }
+    .details {
+      color: #ffffff;
+      text-align: center;
+      font-family: "Suit-Bold", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      position: absolute;
+      top: 1700px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .hwa-image {
+      width: 90%;
+      max-width: 504.23px;
+      position: absolute;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .hwa1 {
+      left: 25%;
+      top: 2000px;
+    }
+    .hwa2 {
+      left: 75%;
+      top: 2500px;
+    }
+    .hwa3 {
+      left: 25%;
+      top: 3300px;
+    }
+    body {
+      background: #000000;
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 0;
+      font-family: 'SUIT Variable', sans-serif;
+      min-height: 4200px;
+    }
+    .main-hero-image {
+      width: 100vw;
+      max-width: none;
+      display: block;
+      margin: 3700px auto 0 auto;
+      object-fit: contain;
+    }
+    .gnb {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100vw;
+      min-height: 80px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      margin: 0;
+      z-index: 10;
+      background: #000;
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+      box-sizing: border-box;
+    }
+    .about-main {
+      max-width: 1440px;
+      margin: 0 auto;
     }
 </style>
 <body>
@@ -61,9 +227,41 @@
       </div>
     </a>
 
-      <!-- 상세 설명은 추후 추가 -->
+    <!-- 화 상품 메인 이미지 -->
+    <img class="shop-main-image" src="asset/shop_mainimage_hwa.png" alt="화 상품 메인 이미지" />
+    
+    <!-- 상품 제목 -->
+    <div class="shop-menu">토템 핀버튼 세트 (화 ver)</div>
+    
+    <!-- 상품 가격 -->
+    <div class="shop-price">5,000 ￦</div>
+    
+    <!-- 상품 설명 -->
+    <div class="shop-text">
+      화가 부족한 당신,
+      <br />
+      화끈하게 화를 내보고 싶다구요?
+      <br />
+      토템 핀버튼 세트 (화 ver)를 가방에 달아보세요.
+      <br />
+      화르륵 화를 낼 수 있게 될지도 몰라요.
     </div>
+    
+    <!-- 사주 관련 텍스트 -->
+    <div class="shop-saju">내 사주 오행이 궁금하다면?</div>
+    
+    <!-- 사주 링크 -->
+    <a href="https://whatisthisclub4.netlify.app/" target="_blank" style="text-decoration: none;">
+      <div class="saju-link">빠르게 확인하기</div>
+    </a>
+    <div class="details">DETAILS </div>
+    
+    <!-- 상세 이미지 3개 -->
+    <img class="hwa-image hwa1" src="asset/hwa1.png" alt="상세이미지1" />
+    <img class="hwa-image hwa2" src="asset/hwa2.png" alt="상세이미지2" />
+    <img class="hwa-image hwa3" src="asset/hwa3.png" alt="상세이미지3" />
   </main>
+  <!-- FOOTER.png 이미지 추가 -->
   <img class="main-hero-image" src="asset/FOOTER.png" alt="푸터 이미지" />
 </body>
-</html>
+</html> 
